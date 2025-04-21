@@ -1,0 +1,28 @@
+[
+    {
+        "classes": [
+            {
+                "className": "view",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "initialize",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "view",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "view.h",
+        "outputRevision": 68
+    }
+]
