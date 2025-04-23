@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <View.h>
+#include <view.h>
+#include <paintball.h>
 
 int main(int argc, char *argv[])
 {
@@ -15,6 +16,9 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
 
     qmlRegisterType<view>("Backend",1,0,"View");
+    qmlRegisterType<paintball>("Paint",1,0,"Paintball");//needs to have the same name as the Paintball in Paintball.qml
+
+
     engine.loadFromModule("ThreeBody2", "Main");//when loading, needs to be registered
 
 

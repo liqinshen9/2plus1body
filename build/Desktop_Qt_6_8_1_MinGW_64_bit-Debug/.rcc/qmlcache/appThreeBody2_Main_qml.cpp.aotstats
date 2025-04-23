@@ -9,7 +9,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on width.",
                         "functionName": "width",
-                        "line": 12
+                        "line": 13
                     },
                     {
                         "codegenSuccessfull": false,
@@ -17,7 +17,15 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on height.",
                         "functionName": "height",
-                        "line": 13
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 95,
+                        "errorMessage": "method initialize cannot be resolved.",
+                        "functionName": "onCompleted",
+                        "line": 15
                     }
                 ],
                 "filepath": "C:/Users/spong/Documents/ThreeBody2/Main.qml"

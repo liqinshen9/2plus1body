@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_
 #############################################
 # Order-only phony target for appThreeBody2
 
-build cmake_object_order_depends_target_appThreeBody2: phony || .qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp .qt/rcc/qrc_qmake_ThreeBody2.cpp .rcc/qmlcache/appThreeBody2_Main_qml.cpp .rcc/qmlcache/appThreeBody2_Main_qml.cpp.aotstats .rcc/qmlcache/appThreeBody2_qmlcache_loader.cpp ThreeBody2/appThreeBody2.qmltypes appThreeBody2_autogen appThreeBody2_autogen/mocs_compilation.cpp appThreeBody2_autogen/timestamp appThreeBody2_autogen_timestamp_deps appThreeBody2_qmlimportscan appThreeBody2_tooling appthreebody2_qmltyperegistrations.cpp meta_types/appThreeBody2_json_file_list.txt meta_types/appThreeBody2_json_file_list.txt.timestamp meta_types/qt6appthreebody2_debug_metatypes.json meta_types/qt6appthreebody2_debug_metatypes.json.gen
+build cmake_object_order_depends_target_appThreeBody2: phony || .qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp .qt/rcc/qrc_qmake_ThreeBody2.cpp .rcc/qmlcache/appThreeBody2_Main_qml.cpp .rcc/qmlcache/appThreeBody2_Main_qml.cpp.aotstats .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp.aotstats .rcc/qmlcache/appThreeBody2_qmlcache_loader.cpp ThreeBody2/appThreeBody2.qmltypes appThreeBody2_autogen appThreeBody2_autogen/mocs_compilation.cpp appThreeBody2_autogen/timestamp appThreeBody2_autogen_timestamp_deps appThreeBody2_qmlimportscan appThreeBody2_tooling appthreebody2_qmltyperegistrations.cpp meta_types/appThreeBody2_json_file_list.txt meta_types/appThreeBody2_json_file_list.txt.timestamp meta_types/qt6appthreebody2_debug_metatypes.json meta_types/qt6appthreebody2_debug_metatypes.json.gen
 
 build CMakeFiles/appThreeBody2.dir/appThreeBody2_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__appThreeBody2_unscanned_Debug C$:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/appThreeBody2_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_appThreeBody2
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
@@ -89,6 +89,22 @@ build CMakeFiles/appThreeBody2.dir/view.cpp.obj: CXX_COMPILER__appThreeBody2_uns
   OBJECT_DIR = CMakeFiles\appThreeBody2.dir
   OBJECT_FILE_DIR = CMakeFiles\appThreeBody2.dir
 
+build CMakeFiles/appThreeBody2.dir/ball.cpp.obj: CXX_COMPILER__appThreeBody2_unscanned_Debug C$:/Users/spong/Documents/ThreeBody2/ball.cpp || cmake_object_order_depends_target_appThreeBody2
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\appThreeBody2.dir\ball.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/appThreeBody2_autogen/include -IC:/Users/spong/Documents/ThreeBody2 -isystem C:/Qt/6.8.1/mingw_64/include/QtQml/6.8.1 -isystem C:/Qt/6.8.1/mingw_64/include/QtQml/6.8.1/QtQml -isystem C:/Qt/6.8.1/mingw_64/include/QtCore/6.8.1 -isystem C:/Qt/6.8.1/mingw_64/include/QtCore/6.8.1/QtCore -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtQml -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.8.1/mingw_64/include/QtNetwork -isystem C:/Qt/6.8.1/mingw_64/include/QtQuick -isystem C:/Qt/6.8.1/mingw_64/include/QtGui -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlMeta -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlModels -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt/6.8.1/mingw_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles\appThreeBody2.dir
+  OBJECT_FILE_DIR = CMakeFiles\appThreeBody2.dir
+
+build CMakeFiles/appThreeBody2.dir/paintball.cpp.obj: CXX_COMPILER__appThreeBody2_unscanned_Debug C$:/Users/spong/Documents/ThreeBody2/paintball.cpp || cmake_object_order_depends_target_appThreeBody2
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\appThreeBody2.dir\paintball.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/appThreeBody2_autogen/include -IC:/Users/spong/Documents/ThreeBody2 -isystem C:/Qt/6.8.1/mingw_64/include/QtQml/6.8.1 -isystem C:/Qt/6.8.1/mingw_64/include/QtQml/6.8.1/QtQml -isystem C:/Qt/6.8.1/mingw_64/include/QtCore/6.8.1 -isystem C:/Qt/6.8.1/mingw_64/include/QtCore/6.8.1/QtCore -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtQml -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.8.1/mingw_64/include/QtNetwork -isystem C:/Qt/6.8.1/mingw_64/include/QtQuick -isystem C:/Qt/6.8.1/mingw_64/include/QtGui -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlMeta -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlModels -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt/6.8.1/mingw_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles\appThreeBody2.dir
+  OBJECT_FILE_DIR = CMakeFiles\appThreeBody2.dir
+
 build CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_qmlcache_loader.cpp.obj: CXX_COMPILER__appThreeBody2_unscanned_Debug C$:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_qmlcache_loader.cpp || cmake_object_order_depends_target_appThreeBody2
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\appThreeBody2.dir\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug\.rcc\qmlcache\appThreeBody2_qmlcache_loader.cpp.obj.d
@@ -100,6 +116,14 @@ build CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rc
 build CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Main_qml.cpp.obj: CXX_COMPILER__appThreeBody2_unscanned_Debug C$:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Main_qml.cpp || cmake_object_order_depends_target_appThreeBody2
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\appThreeBody2.dir\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug\.rcc\qmlcache\appThreeBody2_Main_qml.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/appThreeBody2_autogen/include -IC:/Users/spong/Documents/ThreeBody2 -isystem C:/Qt/6.8.1/mingw_64/include/QtQml/6.8.1 -isystem C:/Qt/6.8.1/mingw_64/include/QtQml/6.8.1/QtQml -isystem C:/Qt/6.8.1/mingw_64/include/QtCore/6.8.1 -isystem C:/Qt/6.8.1/mingw_64/include/QtCore/6.8.1/QtCore -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtQml -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.8.1/mingw_64/include/QtNetwork -isystem C:/Qt/6.8.1/mingw_64/include/QtQuick -isystem C:/Qt/6.8.1/mingw_64/include/QtGui -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlMeta -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlModels -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt/6.8.1/mingw_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles\appThreeBody2.dir
+  OBJECT_FILE_DIR = CMakeFiles\appThreeBody2.dir\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug\.rcc\qmlcache
+
+build CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Paintball_qml.cpp.obj: CXX_COMPILER__appThreeBody2_unscanned_Debug C$:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Paintball_qml.cpp || cmake_object_order_depends_target_appThreeBody2
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\appThreeBody2.dir\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug\.rcc\qmlcache\appThreeBody2_Paintball_qml.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/appThreeBody2_autogen/include -IC:/Users/spong/Documents/ThreeBody2 -isystem C:/Qt/6.8.1/mingw_64/include/QtQml/6.8.1 -isystem C:/Qt/6.8.1/mingw_64/include/QtQml/6.8.1/QtQml -isystem C:/Qt/6.8.1/mingw_64/include/QtCore/6.8.1 -isystem C:/Qt/6.8.1/mingw_64/include/QtCore/6.8.1/QtCore -isystem C:/Qt/6.8.1/mingw_64/include/QtCore -isystem C:/Qt/6.8.1/mingw_64/include -isystem C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.1/mingw_64/include/QtQml -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.8.1/mingw_64/include/QtNetwork -isystem C:/Qt/6.8.1/mingw_64/include/QtQuick -isystem C:/Qt/6.8.1/mingw_64/include/QtGui -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlMeta -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlModels -isystem C:/Qt/6.8.1/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt/6.8.1/mingw_64/include/QtOpenGL
   OBJECT_DIR = CMakeFiles\appThreeBody2.dir
@@ -121,7 +145,7 @@ build CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt
 #############################################
 # Link the executable appThreeBody2.exe
 
-build appThreeBody2.exe: CXX_EXECUTABLE_LINKER__appThreeBody2_Debug CMakeFiles/appThreeBody2.dir/appThreeBody2_autogen/mocs_compilation.cpp.obj CMakeFiles/appThreeBody2.dir/main.cpp.obj CMakeFiles/appThreeBody2.dir/appthreebody2_qmltyperegistrations.cpp.obj CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_ThreeBody2.cpp.obj CMakeFiles/appThreeBody2.dir/view.cpp.obj CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_qmlcache_loader.cpp.obj CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Main_qml.cpp.obj CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp.obj | C$:/Qt/6.8.1/mingw_64/lib/libQt6Quick.a C$:/Qt/6.8.1/mingw_64/lib/libQt6QmlMeta.a C$:/Qt/6.8.1/mingw_64/lib/libQt6QmlWorkerScript.a C$:/Qt/6.8.1/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Qml.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Network.a C$:/Qt/6.8.1/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.8.1/mingw_64/lib/libQt6EntryPoint.a || appThreeBody2_autogen appThreeBody2_autogen_timestamp_deps appThreeBody2_qmlimportscan appThreeBody2_tooling
+build appThreeBody2.exe: CXX_EXECUTABLE_LINKER__appThreeBody2_Debug CMakeFiles/appThreeBody2.dir/appThreeBody2_autogen/mocs_compilation.cpp.obj CMakeFiles/appThreeBody2.dir/main.cpp.obj CMakeFiles/appThreeBody2.dir/appthreebody2_qmltyperegistrations.cpp.obj CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_ThreeBody2.cpp.obj CMakeFiles/appThreeBody2.dir/view.cpp.obj CMakeFiles/appThreeBody2.dir/ball.cpp.obj CMakeFiles/appThreeBody2.dir/paintball.cpp.obj CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_qmlcache_loader.cpp.obj CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Main_qml.cpp.obj CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Paintball_qml.cpp.obj CMakeFiles/appThreeBody2.dir/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp.obj | C$:/Qt/6.8.1/mingw_64/lib/libQt6Quick.a C$:/Qt/6.8.1/mingw_64/lib/libQt6QmlMeta.a C$:/Qt/6.8.1/mingw_64/lib/libQt6QmlWorkerScript.a C$:/Qt/6.8.1/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Qml.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Network.a C$:/Qt/6.8.1/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.8.1/mingw_64/lib/libQt6EntryPoint.a || appThreeBody2_autogen appThreeBody2_autogen_timestamp_deps appThreeBody2_qmlimportscan appThreeBody2_tooling
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.8.1/mingw_64/lib/libQt6Quick.a  C:/Qt/6.8.1/mingw_64/lib/libQt6QmlMeta.a  C:/Qt/6.8.1/mingw_64/lib/libQt6QmlWorkerScript.a  C:/Qt/6.8.1/mingw_64/lib/libQt6QmlModels.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Qml.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Network.a  -lws2_32  C:/Qt/6.8.1/mingw_64/lib/libQt6OpenGL.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Gui.a  C:/Qt/6.8.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.8.1/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -luser32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -184,19 +208,19 @@ build all_qmllint_module: phony appThreeBody2_qmllint_module
 #############################################
 # Utility command for appThreeBody2_tooling
 
-build appThreeBody2_tooling: phony ThreeBody2/Main.qml
+build appThreeBody2_tooling: phony ThreeBody2/Main.qml ThreeBody2/Paintball.qml
 
 
 #############################################
 # Utility command for module_appThreeBody2_aotstats_target
 
-build module_appThreeBody2_aotstats_target: phony CMakeFiles/module_appThreeBody2_aotstats_target .rcc/qmlcache/module_appThreeBody2.aotstats .rcc/qmlcache/appThreeBody2_Main_qml.cpp .rcc/qmlcache/appThreeBody2_Main_qml.cpp.aotstats appthreebody2_qmltyperegistrations.cpp ThreeBody2/appThreeBody2.qmltypes appThreeBody2_qmltyperegistration
+build module_appThreeBody2_aotstats_target: phony CMakeFiles/module_appThreeBody2_aotstats_target .rcc/qmlcache/module_appThreeBody2.aotstats .rcc/qmlcache/appThreeBody2_Main_qml.cpp .rcc/qmlcache/appThreeBody2_Main_qml.cpp.aotstats .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp.aotstats appthreebody2_qmltyperegistrations.cpp ThreeBody2/appThreeBody2.qmltypes appThreeBody2_qmltyperegistration
 
 
 #############################################
 # Utility command for all_aotstats
 
-build all_aotstats: phony CMakeFiles/all_aotstats .rcc/qmlcache/all_aotstats.aotstats .rcc/qmlcache/all_aotstats.txt .rcc/qmlcache/module_appThreeBody2.aotstats .rcc/qmlcache/appThreeBody2_Main_qml.cpp .rcc/qmlcache/appThreeBody2_Main_qml.cpp.aotstats appthreebody2_qmltyperegistrations.cpp ThreeBody2/appThreeBody2.qmltypes module_appThreeBody2_aotstats_target
+build all_aotstats: phony CMakeFiles/all_aotstats .rcc/qmlcache/all_aotstats.aotstats .rcc/qmlcache/all_aotstats.txt .rcc/qmlcache/module_appThreeBody2.aotstats .rcc/qmlcache/appThreeBody2_Main_qml.cpp .rcc/qmlcache/appThreeBody2_Main_qml.cpp.aotstats .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp.aotstats appthreebody2_qmltyperegistrations.cpp ThreeBody2/appThreeBody2.qmltypes module_appThreeBody2_aotstats_target
 
 
 #############################################
@@ -329,9 +353,18 @@ build .rcc/qmlcache/appThreeBody2_Main_qml.cpp .rcc/qmlcache/appThreeBody2_Main_
 
 
 #############################################
+# Custom command for .rcc\qmlcache\appThreeBody2_Paintball_qml.cpp
+
+build .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/appThreeBody2_Paintball_qml.cpp ${cmake_ninja_workdir}.rcc/qmlcache/appThreeBody2_Paintball_qml.cpp.aotstats: CUSTOM_COMMAND C$:/Qt/6.8.1/mingw_64/bin/qmlcachegen.exe C$:/Users/spong/Documents/ThreeBody2/Paintball.qml .qt/rcc/qmake_ThreeBody2.qrc .qt/rcc/appThreeBody2_raw_qml_0.qrc ThreeBody2/appThreeBody2.qmltypes ThreeBody2/qmldir
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\spong\Documents\ThreeBody2\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache && C:\Users\spong\Documents\ThreeBody2\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.1/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/ThreeBody2/Paintball.qml -I C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug -I C:/Qt/6.8.1/mingw_64/qml -i C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/ThreeBody2/qmldir --resource C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qmake_ThreeBody2.qrc --resource C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/appThreeBody2_raw_qml_0.qrc --dump-aot-stats --module-id=ThreeBody2(appThreeBody2) -o C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Paintball_qml.cpp C:/Users/spong/Documents/ThreeBody2/Paintball.qml"
+  DESC = Generating .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp, .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp.aotstats
+  restat = 1
+
+
+#############################################
 # Custom command for .qt\rcc\qrc_appThreeBody2_raw_qml_0.cpp
 
-build .qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp: CUSTOM_COMMAND C$:/Users/spong/Documents/ThreeBody2/Main.qml .qt/rcc/appThreeBody2_raw_qml_0.qrc C$:/Qt/6.8.1/mingw_64/bin/rcc.exe || appThreeBody2_autogen appThreeBody2_autogen_timestamp_deps appThreeBody2_qmlimportscan appThreeBody2_tooling
+build .qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp: CUSTOM_COMMAND C$:/Users/spong/Documents/ThreeBody2/Main.qml C$:/Users/spong/Documents/ThreeBody2/Paintball.qml .qt/rcc/appThreeBody2_raw_qml_0.qrc C$:/Qt/6.8.1/mingw_64/bin/rcc.exe || appThreeBody2_autogen appThreeBody2_autogen_timestamp_deps appThreeBody2_qmlimportscan appThreeBody2_tooling
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\spong\Documents\ThreeBody2\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug && C:\Qt\6.8.1\mingw_64\bin\rcc.exe --output C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp --name appThreeBody2_raw_qml_0 C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/appThreeBody2_raw_qml_0.qrc --no-zstd"
   DESC = Running rcc for resource appThreeBody2_raw_qml_0
   restat = 1
@@ -366,21 +399,21 @@ build CMakeFiles/appThreeBody2_qmltyperegistration | ${cmake_ninja_workdir}CMake
 #############################################
 # Custom command for CMakeFiles\appThreeBody2_qmllint
 
-build CMakeFiles/appThreeBody2_qmllint | ${cmake_ninja_workdir}CMakeFiles/appThreeBody2_qmllint: CUSTOM_COMMAND C$:/Qt/6.8.1/mingw_64/bin/qmllint.exe C$:/Users/spong/Documents/ThreeBody2/Main.qml .rcc/qmllint/appThreeBody2.rsp || all_qmltyperegistrations appThreeBody2_qmltyperegistration
+build CMakeFiles/appThreeBody2_qmllint | ${cmake_ninja_workdir}CMakeFiles/appThreeBody2_qmllint: CUSTOM_COMMAND C$:/Qt/6.8.1/mingw_64/bin/qmllint.exe C$:/Users/spong/Documents/ThreeBody2/Main.qml C$:/Users/spong/Documents/ThreeBody2/Paintball.qml .rcc/qmllint/appThreeBody2.rsp || all_qmltyperegistrations appThreeBody2_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\spong\Documents\ThreeBody2 && C:\Users\spong\Documents\ThreeBody2\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.1/mingw_64/bin/qmllint.exe @C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmllint/appThreeBody2.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appThreeBody2_qmllint_json
 
-build CMakeFiles/appThreeBody2_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appThreeBody2_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.8.1/mingw_64/bin/qmllint.exe C$:/Users/spong/Documents/ThreeBody2/Main.qml .rcc/qmllint/appThreeBody2_json.rsp || all_qmltyperegistrations appThreeBody2_qmltyperegistration
+build CMakeFiles/appThreeBody2_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appThreeBody2_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.8.1/mingw_64/bin/qmllint.exe C$:/Users/spong/Documents/ThreeBody2/Main.qml C$:/Users/spong/Documents/ThreeBody2/Paintball.qml .rcc/qmllint/appThreeBody2_json.rsp || all_qmltyperegistrations appThreeBody2_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\spong\Documents\ThreeBody2 && C:\Users\spong\Documents\ThreeBody2\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.1/mingw_64/bin/qmllint.exe @C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmllint/appThreeBody2_json.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appThreeBody2_qmllint_module
 
-build CMakeFiles/appThreeBody2_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appThreeBody2_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.8.1/mingw_64/bin/qmllint.exe C$:/Users/spong/Documents/ThreeBody2/Main.qml .rcc/qmllint/appThreeBody2_module.rsp || all_qmltyperegistrations appThreeBody2_qmltyperegistration
+build CMakeFiles/appThreeBody2_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appThreeBody2_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.8.1/mingw_64/bin/qmllint.exe C$:/Users/spong/Documents/ThreeBody2/Main.qml C$:/Users/spong/Documents/ThreeBody2/Paintball.qml .rcc/qmllint/appThreeBody2_module.rsp || all_qmltyperegistrations appThreeBody2_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\spong\Documents\ThreeBody2 && C:\Users\spong\Documents\ThreeBody2\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.1/mingw_64/bin/qmllint.exe @C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmllint/appThreeBody2_module.rsp"
 
 
@@ -394,6 +427,15 @@ build ThreeBody2/Main.qml | ${cmake_ninja_workdir}ThreeBody2/Main.qml: CUSTOM_CO
 
 
 #############################################
+# Custom command for ThreeBody2\Paintball.qml
+
+build ThreeBody2/Paintball.qml | ${cmake_ninja_workdir}ThreeBody2/Paintball.qml: CUSTOM_COMMAND C$:/Users/spong/Documents/ThreeBody2/Paintball.qml
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\spong\Documents\ThreeBody2 && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/spong/Documents/ThreeBody2/Paintball.qml C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/ThreeBody2/Paintball.qml"
+  DESC = Copying Paintball.qml to C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/ThreeBody2/Paintball.qml
+  restat = 1
+
+
+#############################################
 # Phony custom command for CMakeFiles\module_appThreeBody2_aotstats_target
 
 build CMakeFiles/module_appThreeBody2_aotstats_target | ${cmake_ninja_workdir}CMakeFiles/module_appThreeBody2_aotstats_target: phony .rcc/qmlcache/module_appThreeBody2.aotstats || appThreeBody2_qmltyperegistration
@@ -402,7 +444,7 @@ build CMakeFiles/module_appThreeBody2_aotstats_target | ${cmake_ninja_workdir}CM
 #############################################
 # Custom command for .rcc\qmlcache\module_appThreeBody2.aotstats
 
-build .rcc/qmlcache/module_appThreeBody2.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/module_appThreeBody2.aotstats: CUSTOM_COMMAND .rcc/qmlcache/appThreeBody2_Main_qml.cpp.aotstats .rcc/qmlcache/module_appThreeBody2.aotstatslist || appThreeBody2_qmltyperegistration
+build .rcc/qmlcache/module_appThreeBody2.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/module_appThreeBody2.aotstats: CUSTOM_COMMAND .rcc/qmlcache/appThreeBody2_Main_qml.cpp.aotstats .rcc/qmlcache/appThreeBody2_Paintball_qml.cpp.aotstats .rcc/qmlcache/module_appThreeBody2.aotstatslist || appThreeBody2_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\spong\Documents\ThreeBody2\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug && C:\Users\spong\Documents\ThreeBody2\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.1/mingw_64/bin/qmlaotstats.exe aggregate C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/module_appThreeBody2.aotstatslist C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/module_appThreeBody2.aotstats"
   DESC = Generating .rcc/qmlcache/module_appThreeBody2.aotstats
   restat = 1
@@ -433,7 +475,7 @@ build CMakeFiles/appThreeBody2_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles/
 #############################################
 # Custom command for .qt\qml_imports\appThreeBody2_build.cmake
 
-build .qt/qml_imports/appThreeBody2_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appThreeBody2_build.cmake: CUSTOM_COMMAND C$:/Qt/6.8.1/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_ThreeBody2.qrc .qt/rcc/appThreeBody2_raw_qml_0.qrc C$:/Users/spong/Documents/ThreeBody2/Main.qml
+build .qt/qml_imports/appThreeBody2_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appThreeBody2_build.cmake: CUSTOM_COMMAND C$:/Qt/6.8.1/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_ThreeBody2.qrc .qt/rcc/appThreeBody2_raw_qml_0.qrc C$:/Users/spong/Documents/ThreeBody2/Main.qml C$:/Users/spong/Documents/ThreeBody2/Paintball.qml
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\spong\Documents\ThreeBody2 && C:\Users\spong\Documents\ThreeBody2\build\Desktop_Qt_6_8_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.1/mingw_64/bin/qmlimportscanner.exe @C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/qml_imports/appThreeBody2_build.rsp"
   DESC = Running qmlimportscanner for appThreeBody2
   restat = 1

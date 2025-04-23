@@ -1,5 +1,6 @@
 import QtQuick
 import Backend 1.0
+import Paint 1.0
 
 Window {
     width: 640
@@ -11,5 +12,8 @@ Window {
         id:root;
         width:parent.width;
         height:parent.height;
+        Component.onCompleted: {
+            initialize()
+        }
     }
 }

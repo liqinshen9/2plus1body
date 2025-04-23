@@ -143,18 +143,28 @@ appThreeBody2_autogen/timestamp: \
 	C:/Qt/6.8.1/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.8.1/mingw_64/include/QtCore/qxptype_traits.h \
 	C:/Qt/6.8.1/mingw_64/include/QtCore/qyieldcpu.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/QPainter \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/QTransform \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qaccessible.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qaccessible_base.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/qbrush.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qcolor.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qevent.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qeventpoint.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qfont.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/qfontinfo.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/qfontmetrics.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/qimage.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qinputdevice.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qkeysequence.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/qpaintdevice.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/qpainter.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/qpen.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/qpixelformat.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/qpixmap.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qpointingdevice.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qpolygon.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qregion.h \
@@ -162,6 +172,7 @@ appThreeBody2_autogen/timestamp: \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qrgba64.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qscreen.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qscreen_platform.h \
+	C:/Qt/6.8.1/mingw_64/include/QtGui/qtextoption.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qtgui-config.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qtguiexports.h \
 	C:/Qt/6.8.1/mingw_64/include/QtGui/qtguiglobal.h \
@@ -198,7 +209,9 @@ appThreeBody2_autogen/timestamp: \
 	C:/Qt/6.8.1/mingw_64/include/QtQml/qtqmlglobal.h \
 	C:/Qt/6.8.1/mingw_64/include/QtQmlIntegration/qqmlintegration.h \
 	C:/Qt/6.8.1/mingw_64/include/QtQuick/QQuickItem \
+	C:/Qt/6.8.1/mingw_64/include/QtQuick/QQuickPaintedItem \
 	C:/Qt/6.8.1/mingw_64/include/QtQuick/qquickitem.h \
+	C:/Qt/6.8.1/mingw_64/include/QtQuick/qquickpainteditem.h \
 	C:/Qt/6.8.1/mingw_64/include/QtQuick/qtquick-config.h \
 	C:/Qt/6.8.1/mingw_64/include/QtQuick/qtquickexports.h \
 	C:/Qt/6.8.1/mingw_64/include/QtQuick/qtquickglobal.h \
@@ -966,6 +979,8 @@ appThreeBody2_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Users/spong/Documents/ThreeBody2/CMakeLists.txt \
+	C:/Users/spong/Documents/ThreeBody2/ball.cpp \
+	C:/Users/spong/Documents/ThreeBody2/ball.h \
 	C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/qml_imports/appThreeBody2_conf.cmake \
 	C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
@@ -973,6 +988,8 @@ appThreeBody2_autogen/timestamp: \
 	C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/appThreeBody2_autogen/moc_predefs.h \
 	C:/Users/spong/Documents/ThreeBody2/main.cpp \
+	C:/Users/spong/Documents/ThreeBody2/paintball.cpp \
+	C:/Users/spong/Documents/ThreeBody2/paintball.h \
 	C:/Users/spong/Documents/ThreeBody2/view.cpp \
 	C:/Users/spong/Documents/ThreeBody2/view.h \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

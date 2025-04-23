@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="/qt/qml/ThreeBody2/">
     <file alias="Main.qml">C:/Users/spong/Documents/ThreeBody2/Main.qml</file>
+    <file alias="Paintball.qml">C:/Users/spong/Documents/ThreeBody2/Paintball.qml</file>
   </qresource>
 </RCC>
 

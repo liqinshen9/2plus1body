@@ -768,6 +768,18 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/spong/Documents/ThreeBody2/ball.h",
+			"MU",
+			"EWIEGA46WW/moc_ball.cpp",
+			null
+		],
+		[
+			"C:/Users/spong/Documents/ThreeBody2/paintball.h",
+			"MU",
+			"EWIEGA46WW/moc_paintball.cpp",
+			null
+		],
+		[
 			"C:/Users/spong/Documents/ThreeBody2/view.h",
 			"MU",
 			"EWIEGA46WW/moc_view.cpp",
@@ -857,6 +869,7 @@
 		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp",
 		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_ThreeBody2.cpp",
 		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Main_qml.cpp",
+		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Paintball_qml.cpp",
 		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_qmlcache_loader.cpp",
 		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/appthreebody2_qmltyperegistrations.cpp"
 	],
@@ -870,7 +883,9 @@
 	"SETTINGS_FILE" : "C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/CMakeFiles/appThreeBody2_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Users/spong/Documents/ThreeBody2/ball.cpp", "MU", null ],
 		[ "C:/Users/spong/Documents/ThreeBody2/main.cpp", "MU", null ],
+		[ "C:/Users/spong/Documents/ThreeBody2/paintball.cpp", "MU", null ],
 		[ "C:/Users/spong/Documents/ThreeBody2/view.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
@@ -880,6 +895,7 @@
 		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appThreeBody2_raw_qml_0.cpp",
 		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_ThreeBody2.cpp",
 		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Main_qml.cpp",
+		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_Paintball_qml.cpp",
 		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.rcc/qmlcache/appThreeBody2_qmlcache_loader.cpp",
 		"C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/appthreebody2_qmltyperegistrations.cpp"
 	],

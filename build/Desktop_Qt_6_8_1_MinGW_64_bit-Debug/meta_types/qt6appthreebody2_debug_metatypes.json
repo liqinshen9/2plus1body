@@ -2,8 +2,26 @@
     {
         "classes": [
             {
+                "className": "paintball",
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "paintball",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "paintball.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
                 "className": "view",
-                "lineNumber": 8,
+                "lineNumber": 10,
                 "methods": [
                     {
                         "access": "public",
