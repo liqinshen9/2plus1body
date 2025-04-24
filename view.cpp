@@ -13,7 +13,9 @@ void view::initialize() {
     for (int i = 0; i <3;i++) {
         objects.append(createball());
     }
-    //objects[0]->setPosition(QPointF(60,60));
+    objects[0]->setPosition(QPointF(60,60));
+    objects[1]->setPosition(QPointF(200,60));
+    objects[2]->setPosition(QPointF(340,60));
 }
 
 Ball* view::createball()
