@@ -5,6 +5,7 @@ C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/ap
   C:/Qt/6.8.1/mingw_64/include/QtCore/QRect \
   C:/Qt/6.8.1/mingw_64/include/QtCore/QSize \
   C:/Qt/6.8.1/mingw_64/include/QtCore/QSizeF \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/q20memory.h \
@@ -19,6 +20,7 @@ C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/ap
   C:/Qt/6.8.1/mingw_64/include/QtCore/qatomic.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qbytearray.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -124,6 +126,7 @@ C:/Users/spong/Documents/ThreeBody2/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/ap
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtextstream.h \
+  C:/Qt/6.8.1/mingw_64/include/QtCore/qtimer.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtimezone.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.8.1/mingw_64/include/QtCore/qtnoop.h \

@@ -6,6 +6,7 @@ C:/Users/spong/Documents/ThreeBody2/view.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/QRect
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/QSize
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/QSizeF
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/QTimer
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/q20iterator.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/q20memory.h
@@ -20,6 +21,7 @@ C:/Users/spong/Documents/ThreeBody2/view.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qatomic.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qatomic_cxx11.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qbasicatomic.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qbasictimer.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qbindingstorage.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qbytearray.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qbytearrayalgorithms.h
@@ -125,6 +127,7 @@ C:/Users/spong/Documents/ThreeBody2/view.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qtdeprecationmarkers.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qtenvironmentvariables.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qtextstream.h
+ mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qtimer.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qtimezone.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qtmetamacros.h
  mdp:C:/Qt/6.8.1/mingw_64/include/QtCore/qtnoop.h

@@ -3,6 +3,9 @@
 view::view(QQuickItem * parent):
     QQuickItem(parent)
 {
+    timer.setInterval(17);
+    connect(&timer, SIGNAL(timeout()),this,SLOT(iterate()));
+    timer.start();
 
 }
 
@@ -29,3 +32,25 @@ Ball* view::createball()
     return ball;
 
 }
+
+void view::iterate()
+{
+    for (int i =0;i<objects.length();i++) {
+        QVector2D velocity = objects[i]->getVelocity();
+        objects[i]->setPosition(objects[i]->position()+velocity.toPointF());
+        objects[i]->setVelocity(velocity+QVector2D(0,0.05));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

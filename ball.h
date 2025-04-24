@@ -6,6 +6,12 @@ class Ball
 {
 public:
     Ball();
+    void setVelocity(QVector2D v){
+        velocity = v;
+    }
+    QVector2D getVelocity(){
+        return velocity;
+    }
     void setPaintball(QQuickItem *object) {
         paintball=object;
     }
@@ -13,6 +19,7 @@ public:
     QPointF position();
 private:
     QQuickItem *paintball=nullptr;
+    QVector2D velocity;
 
 };
 

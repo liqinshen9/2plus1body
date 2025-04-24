@@ -6,13 +6,21 @@
             "methods": [
                 {
                     "access": "public",
-                    "index": 0,
+                    "index": 1,
                     "name": "initialize",
                     "returnType": "void"
                 }
             ],
             "object": true,
             "qualifiedClassName": "view",
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "iterate",
+                    "returnType": "void"
+                }
+            ],
             "superClasses": [
                 {
                     "access": "public",
