@@ -41,19 +41,24 @@ Ball* view::createball()
 
 }
 
-void view::iterate()
+void view::iterate()//will run multiple times
 {
     for (int i =0;i<objects.length();i++) {
         QVector2D velocity = objects[i]->getVelocity();
         objects[i]->setPosition(objects[i]->position()+velocity.toPointF());
         objects[i]->setVelocity(velocity+QVector2D(0,0.05));//acceleration
-
-        if (objects[i]->position().y() + 100 > height() || objects[i]->position().x() + 100 > width()) {
+        qDebug()<<33333333;
+        if (objects[i]->position().y() + 100 > height()){
+            objects[i]->setPosition(QPointF(objects[i]->position().x(), height()-100));
+            QVector2D v = objects[i]->getVelocity();
+            QVector2D new_v = QVector2D(v.x(), v.y()*-0.9);
+            objects[i]->setVelocity(new_v);
+        }
+        if (objects[i]->position().x()+100>width()) {
             objects[i]->setPosition(QPointF(width()-100, objects[i]->position().y()));
-            qDebug()<<222222222222222;
-            //objects[i]->setPosition(QPointF(objects[i]->position().x(), height()-100));
-
-            //objects[i]->setVelocity(objects[i]->getVelocity()*-0.9);
+            QVector2D v = objects[i]->getVelocity();
+            QVector2D new_v = QVector2D(v.x()*-0.9,v.y());
+            objects[i]->setVelocity(new_v);
         }
     }
 }
