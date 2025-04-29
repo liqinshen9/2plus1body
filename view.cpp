@@ -42,10 +42,14 @@ Ball* view::createball()
 
 void view::iterate()//will run multiple times
 {
-    float resultx = qPow(objects[0]->position().x() - objects[1]->position().x(),2);
-    float resulty = qPow(objects[0]->position().y() - objects[1]->position().y(),2);
-    float distance = qSqrt(resultx+resulty);
-    qDebug()<< distance;
+    //float resultx = qPow(objects[0]->position().x() - objects[1]->position().x(),2);
+    //float resulty = qPow(objects[0]->position().y() - objects[1]->position().y(),2);
+    //float distance = qSqrt(resultx+resulty);
+    //qDebug()<< distance;
+    QVector2D result;
+    result.setX(objects[0]->position().x() - objects[1]->position().x());
+    result.setY(objects[0]->position().y() - objects[1]->position().y());
+    qDebug()<<result;
     for (int i =0;i<objects.length();i++) {
 
         QVector2D velocity = objects[i]->getVelocity();
