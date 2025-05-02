@@ -14,6 +14,7 @@ public:
     view(QQuickItem * parent = nullptr);
     Q_INVOKABLE void initialize();
     Ball * createball();
+    QVector2D acceleration(Ball * b0, Ball * b1);
 private:
     int count = 0;
     QTimer timer;

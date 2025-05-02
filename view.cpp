@@ -15,7 +15,7 @@ view::view(QQuickItem * parent):
 void view::initialize() {
     //finds application engine pointer
     engine = qobject_cast<QQmlApplicationEngine*>(QQmlEngine::contextForObject(this)->engine());
-    for (int i = 0; i <2;i++) {
+    for (int i = 0; i <3;i++) {
         objects.append(createball());
 
     }
@@ -23,7 +23,7 @@ void view::initialize() {
     objects[0]->setVelocity(QVector2D(1,1));
     objects[1]->setPosition(QPointF(200,60));
     //objects[1]->setVelocity(QVector2D(3,4));
-    //objects[2]->setPosition(QPointF(340,60));
+    objects[2]->setPosition(QPointF(340,60));
     //objects[2]->setVelocity(QVector2D(0.5,0));
 
 }
@@ -40,37 +40,43 @@ Ball* view::createball()
 
 }
 
-void view::iterate()//will run multiple times
+QVector2D view::acceleration(Ball * b0, Ball * b1)
 {
-    float resultx = qPow(objects[1]->position().x() - objects[0]->position().x(),2);
-    float resulty = qPow(objects[1]->position().y() - objects[0]->position().y(),2);
+    QPointF p0 = b0->position();
+    QPointF p1 = b1->position();
+    float result = qPow(p1.x() - p0.x(),2)+ qPow(p1.y() - p0.y(),2);
+    float distance = qSqrt(result);
 
-    float resultx1 = qPow(objects[0]->position().x() - objects[1]->position().x(),2);
-    float resulty1 = qPow(objects[0]->position().y() - objects[1]->position().y(),2);
+    QVector2D v01;//object[0] to object[1]
 
-    float distance = qSqrt(resultx+resulty);
-    //qDebug()<< distance;
-    QVector2D result;//object[0] to object[1]
-    QVector2D result1;//object[1] to object[0]
+    v01.setX(p1.x() - p0.x());
+    v01.setY(p1.y() - p0.y());
 
-    result.setX(objects[1]->position().x() - objects[0]->position().x());
-    result.setY(objects[1]->position().y() - objects[0]->position().y());
-    result1.setX(objects[0]->position().x() - objects[1]->position().x());
-    result1.setY(objects[0]->position().y() - objects[1]->position().y());
-
-    float length1 = qPow(result.x(),2);
-    float length2 = qPow(result.y(),2);
-    float length = qSqrt(length1+length2);
-    //qDebug()<<result/length;
     if(distance<100){
         distance=100;
     }
-    float force = 500 * 1/qPow(distance,2);
-    QVector2D new_v = (result/distance) * force;//accleration
-    objects[0]->setVelocity(objects[0]->getVelocity() + new_v);
 
-    QVector2D new_v1 = (result1/distance) * force;//accleration
-    objects[1]->setVelocity(objects[1]->getVelocity() + new_v1);
+    float force = 500 * 1/qPow(distance,2);
+
+    QVector2D a = (v01/distance) * force;//accleration
+
+    return a;
+}
+
+
+
+void view::iterate()//will run multiple times
+{
+    QPointF p1 = objects[1]->position();
+    QPointF p0 = objects[0]->position();
+    Ball * b1 = objects[1];
+    Ball * b0 = objects[0];
+    QVector2D a= acceleration(b0, b1);
+    QVector2D a1 = acceleration(b1,b0);
+
+    b0->setVelocity(b0->getVelocity() + a);//Other is b1, this is b0
+
+    b1->setVelocity(b1->getVelocity() + a1);
 
 
     for (int i =0;i<objects.length();i++) {
