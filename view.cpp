@@ -67,16 +67,23 @@ QVector2D view::acceleration(Ball * b0, Ball * b1)
 
 void view::iterate()//will run multiple times
 {
+
     QPointF p1 = objects[1]->position();
     QPointF p0 = objects[0]->position();
     Ball * b1 = objects[1];
     Ball * b0 = objects[0];
-    QVector2D a= acceleration(b0, b1);
-    QVector2D a1 = acceleration(b1,b0);
+    Ball * b2 = objects[2];
+    QVector2D a01 = acceleration(b0,b1);
+    QVector2D a10 = acceleration(b1,b0);
+    QVector2D a02 = acceleration(b0,b2);
+    QVector2D a12 = acceleration(b1,b2);
+    QVector2D a20 = acceleration(b2,b0);
+    QVector2D a21 = acceleration(b2,b1);
 
-    b0->setVelocity(b0->getVelocity() + a);//Other is b1, this is b0
+    b0->setVelocity(b0->getVelocity() + a01+a02);//Other is b1, this is b0
+    b1->setVelocity(b1->getVelocity() + a12+a10);
+    b2->setVelocity(b2->getVelocity() + a20+a21);
 
-    b1->setVelocity(b1->getVelocity() + a1);
 
 
     for (int i =0;i<objects.length();i++) {
