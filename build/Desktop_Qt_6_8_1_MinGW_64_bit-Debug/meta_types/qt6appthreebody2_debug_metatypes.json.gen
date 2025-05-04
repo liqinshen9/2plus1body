@@ -5,6 +5,22 @@
                 "className": "paintball",
                 "lineNumber": 6,
                 "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "color",
+                        "read": "getColor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "write": "setColor"
+                    }
+                ],
                 "qualifiedClassName": "paintball",
                 "superClasses": [
                     {

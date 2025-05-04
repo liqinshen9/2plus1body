@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 85,
                         "errorMessage": "method initialize cannot be resolved.",
                         "functionName": "onCompleted",
                         "line": 15

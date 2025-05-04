@@ -15,6 +15,7 @@ public:
     void setPaintball(QQuickItem *object) {
         paintball=object;
     }
+    QQuickItem * getPaintball(){return paintball;}
     void setPosition(QPointF position);
     QPointF position();
 private:

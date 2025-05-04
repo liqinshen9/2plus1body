@@ -67,12 +67,36 @@ QVector2D view::acceleration(Ball * b0, Ball * b1)
 
 void view::iterate()//will run multiple times
 {
-
+    QColor b0_color = Qt::black;
+    QColor b1_color = Qt::black;
+    QColor b2_color = Qt::black;
     QPointF p1 = objects[1]->position();
     QPointF p0 = objects[0]->position();
+    QPointF p2 = objects[2]->position();
     Ball * b1 = objects[1];
     Ball * b0 = objects[0];
     Ball * b2 = objects[2];
+
+    if(QVector2D(p1-p0).length() < 100){
+        b0_color = Qt::blue;
+        b1_color = Qt::blue;
+    }
+    b0->getPaintball()->setProperty("color",b0_color);
+    b1->getPaintball()->setProperty("color",b1_color);
+
+    if(QVector2D(p2-p0).length() < 100){
+        b0_color = Qt::blue;
+        b2_color = Qt::blue;
+    }
+    b2->getPaintball()->setProperty("color",b2_color);
+    b0->getPaintball()->setProperty("color",b0_color);
+    if(QVector2D(p2-p1).length() < 100){
+        b1_color = Qt::blue;
+        b2_color = Qt::blue;
+    }
+    b2->getPaintball()->setProperty("color",b2_color);
+    b1->getPaintball()->setProperty("color",b1_color);
+
     QVector2D a01 = acceleration(b0,b1);
     QVector2D a10 = acceleration(b1,b0);
     QVector2D a02 = acceleration(b0,b2);
