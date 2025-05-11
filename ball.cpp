@@ -12,3 +12,14 @@ QPointF Ball::position()
 {
     return paintball->position();
 }
+
+int Ball::getId()
+{
+    return Id;
+}
+
+void Ball::setId(int otherId)
+{
+    Id = otherId;
+}
+

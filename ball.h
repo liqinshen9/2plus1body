@@ -18,7 +18,10 @@ public:
     QQuickItem * getPaintball(){return paintball;}
     void setPosition(QPointF position);
     QPointF position();
+    int getId();
+    void setId(int otherId);
 private:
+    int Id = 0;
     QQuickItem *paintball=nullptr;
     QVector2D velocity;
 

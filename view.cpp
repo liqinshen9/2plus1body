@@ -11,20 +11,31 @@ view::view(QQuickItem * parent):
 
 }
 
+void view::collision(Ball * b0, Ball * b1) {
+    QPointF p0 = b0->position();
+    QPointF p1 = b1->position();
+    QPointF result = p1 - p0;
+
+    QVector2D v = QVector2D(result);
+    v.normalize();
+    QVector2D v1 = QVector2D::dotProduct(b0->getVelocity(),v) * v;
+    QVector2D v2 = QVector2D::dotProduct(b1->getVelocity(),v * -1) * v*-1;
+    b0->setVelocity(b0->getVelocity() - v1);
+    b1->setVelocity(b1->getVelocity() - v2);
+
+}
 
 void view::initialize() {
     //finds application engine pointer
     engine = qobject_cast<QQmlApplicationEngine*>(QQmlEngine::contextForObject(this)->engine());
-    int n = 5;
+    int n = 2;
     for (int i = 0; i <n;i++) {
         objects.append(createball());
         objects[i]->setPosition(QPointF(i * 600 / n, i * 500 / n + 50));
-
+        objects[i]->setId(i);
     }
-
-    //x: i * 600 / n
-    //y: i * 500 / n + 50
-
+    objects[0]->setVelocity(QVector2D(1,0));
+    objects[1]->setVelocity(QVector2D(-1,0));
     //objects[0]->setPosition(QPointF(60,60));
     //objects[0]->setVelocity(QVector2D(1,1));
     //objects[1]->setPosition(QPointF(200,60));
@@ -69,7 +80,6 @@ QVector2D view::acceleration(Ball * b0, Ball * b1)
 }
 
 
-
 void view::iterate()//will run multiple times
 {
 
@@ -84,9 +94,11 @@ void view::iterate()//will run multiple times
                 if(QVector2D(objects[i]->position()-objects[j]->position()).length() < 100){
                     i_color = Qt::red;
                     j_color = Qt::red;
+                    collision(objects[i], objects[j]);
                 }
                 objects[i]->getPaintball()->setProperty("color",i_color);
                 objects[j]->getPaintball()->setProperty("color",j_color);
+
 
             } else {
                 continue;
