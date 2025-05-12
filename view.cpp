@@ -11,31 +11,41 @@ view::view(QQuickItem * parent):
 
 }
 
-void view::collision(Ball * b0, Ball * b1) {
-    QPointF p0 = b0->position();
+void view::collision(Ball * b1, Ball * b2) {
     QPointF p1 = b1->position();
-    QPointF result = p1 - p0;
+    QPointF p2 = b2->position();
+    QPointF collision_vector = p2 - p1;
 
-    QVector2D v = QVector2D(result);
-    v.normalize();
-    QVector2D v1 = QVector2D::dotProduct(b0->getVelocity(),v) * v;
-    QVector2D v2 = QVector2D::dotProduct(b1->getVelocity(),v * -1) * v*-1;
-    b0->setVelocity(b0->getVelocity() - v1);
-    b1->setVelocity(b1->getVelocity() - v2);
+    QVector2D v = QVector2D(collision_vector);
+    QVector2D vector = v.normalized();
+    vector.normalize();
 
+    double v1 = QVector2D::dotProduct(b1->getVelocity(),vector);
+    double v2 = QVector2D::dotProduct(b2->getVelocity(),vector);
+    double v1_final = v2;
+    double v2_final = v1;
+    qDebug()<<v1<<v2;
+    QVector2D b1_newVelocity = vector * v1_final;
+    QVector2D b2_newVelocity = vector * v2_final;
+    qDebug()<<v1*vector<<b1_newVelocity<<b1->getVelocity();
+    b1->setVelocity(b1->getVelocity() - v1*vector + b1_newVelocity);
+    b2->setVelocity(b2->getVelocity() - v2*vector + b2_newVelocity);
+    float diff = (100-v.length()) / 2;
+    b1->setPosition(b1->position() + -1*diff*vector.toPointF());
+    b2->setPosition(b2->position() + diff * vector.toPointF());
 }
 
 void view::initialize() {
     //finds application engine pointer
     engine = qobject_cast<QQmlApplicationEngine*>(QQmlEngine::contextForObject(this)->engine());
-    int n = 2;
+    int n = 5;
     for (int i = 0; i <n;i++) {
         objects.append(createball());
         objects[i]->setPosition(QPointF(i * 600 / n, i * 500 / n + 50));
         objects[i]->setId(i);
     }
-    objects[0]->setVelocity(QVector2D(1,0));
-    objects[1]->setVelocity(QVector2D(-1,0));
+    objects[0]->setVelocity(QVector2D(2,2));
+    objects[1]->setVelocity(QVector2D(-4,0));
     //objects[0]->setPosition(QPointF(60,60));
     //objects[0]->setVelocity(QVector2D(1,1));
     //objects[1]->setPosition(QPointF(200,60));
@@ -89,8 +99,8 @@ void view::iterate()//will run multiple times
         QColor j_color = Qt::black;
         for (int j = 0; j <n ;j++) {
             if (i!=j) {
-                QVector2D a = acceleration(objects[i],objects[j]);
-                objects[i]->setVelocity(objects[i]->getVelocity() + a);
+                //QVector2D a = acceleration(objects[i],objects[j]);
+                //objects[i]->setVelocity(objects[i]->getVelocity() + a);
                 if(QVector2D(objects[i]->position()-objects[j]->position()).length() < 100){
                     i_color = Qt::red;
                     j_color = Qt::red;
