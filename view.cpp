@@ -1,6 +1,7 @@
 #include "view.h"
 #include <QtMath>
 #include <QDebug>
+#include <QRandomGenerator64>
 
 view::view(QQuickItem * parent):
     QQuickItem(parent)
@@ -18,18 +19,22 @@ void view::collision(Ball * b1, Ball * b2) {
 
     QVector2D v = QVector2D(collision_vector);
     QVector2D vector = v.normalized();
+    QVector2D perpendicular = QVector2D(vector.y() * -1,vector.x());
     vector.normalize();
 
     double v1 = QVector2D::dotProduct(b1->getVelocity(),vector);
+    QVector2D u1 = perpendicular * QVector2D::dotProduct(b1->getVelocity(),perpendicular);
     double v2 = QVector2D::dotProduct(b2->getVelocity(),vector);
-    double v1_final = v2;
-    double v2_final = v1;
+    QVector2D u2 = perpendicular * QVector2D::dotProduct(b2->getVelocity(),perpendicular);
+    float m1 = b1->getMass();
+    float m2 = b2->getMass();
+    double v1_final = v1*(m1-m2)/(m1+m2) + v2*(2*m2)/(m1+m2);
+    double v2_final = v1*(2*m1)/(m1+m2) + v2*(m2-m1)/(m1+m2);
     qDebug()<<v1<<v2;
     QVector2D b1_newVelocity = vector * v1_final;
     QVector2D b2_newVelocity = vector * v2_final;
-    qDebug()<<v1*vector<<b1_newVelocity<<b1->getVelocity();
-    b1->setVelocity(b1->getVelocity() - v1*vector + b1_newVelocity);
-    b2->setVelocity(b2->getVelocity() - v2*vector + b2_newVelocity);
+    b1->setVelocity(u1 + b1_newVelocity);
+    b2->setVelocity(u2 + b2_newVelocity);
     float diff = (100-v.length()) / 2;
     b1->setPosition(b1->position() + -1*diff*vector.toPointF());
     b2->setPosition(b2->position() + diff * vector.toPointF());
@@ -39,13 +44,16 @@ void view::initialize() {
     //finds application engine pointer
     engine = qobject_cast<QQmlApplicationEngine*>(QQmlEngine::contextForObject(this)->engine());
     int n = 5;
+    QRandomGenerator64 gen = QRandomGenerator64();
     for (int i = 0; i <n;i++) {
         objects.append(createball());
-        objects[i]->setPosition(QPointF(i * 600 / n, i * 500 / n + 50));
+        objects[i]->setPosition(QPointF(gen.bounded(1,9) * 600 / 10, gen.bounded(1,9) * 600 / 10));
         objects[i]->setId(i);
+        objects[i]->setRadius(gen.bounded(20,50));
+        objects[i]->setVelocity(QVector2D((gen.generateDouble()-0.5)*4,(gen.generateDouble()-0.5)*4));
     }
-    objects[0]->setVelocity(QVector2D(2,2));
-    objects[1]->setVelocity(QVector2D(-4,0));
+    //objects[0]->setVelocity(QVector2D(2,2));
+    //objects[1]->setVelocity(QVector2D(-4,0));
     //objects[0]->setPosition(QPointF(60,60));
     //objects[0]->setVelocity(QVector2D(1,1));
     //objects[1]->setPosition(QPointF(200,60));

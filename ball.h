@@ -20,8 +20,16 @@ public:
     QPointF position();
     int getId();
     void setId(int otherId);
+    float getMass();
+    void setMass(float otherMass);
+    float getRadius();
+    void setRadius(float otherRadius);
+
+
 private:
     int Id = 0;
+    float Mass = 8;
+    float radius = 50;
     QQuickItem *paintball=nullptr;
     QVector2D velocity;
 
